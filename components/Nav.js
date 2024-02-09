@@ -17,18 +17,23 @@ const Nav = () => {
     }
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
-    };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    handleScroll();
   }, []);
 
   const handleMenu = (value) => {
