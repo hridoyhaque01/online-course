@@ -47,11 +47,9 @@ const Nav = () => {
 
   return (
     <nav
-      className={`px-6  text-black-900 dark:text-white-100 sticky top-0 duration-200 z-[999] ${
-        isScroll
-          ? "bg-gradient-100 dark:bg-gradient-900 backdrop-blur-md py-3"
-          : "py-5"
-      }`}
+      className={`px-6  text-black-900 dark:text-white-100 sticky top-0  z-[999] ${
+        isScroll ? "bg-gradient-100 dark:bg-gradient-900 py-3" : "py-5"
+      } ${showMenu ? "" : "backdrop-blur-md duration-200"}`}
     >
       <div className="container flex items-center justify-between gap-4">
         {/* logo  */}
@@ -66,7 +64,7 @@ const Nav = () => {
         <div className="hidden md:flex items-center md:gap-6 lg:gap-10">
           <ul className="flex items-center gap-6 lg:gap-8 font-medium">
             <li>
-              <Link href="/">Courses</Link>
+              <Link href="/courses">Courses</Link>
             </li>
             <li>
               <Link href="/">About</Link>
@@ -164,7 +162,7 @@ const Nav = () => {
                 >
                   <path
                     d="M24.4 7.61333C23.88 7.09333 23.04 7.09333 22.52 7.61333L16 14.12L9.47996 7.6C8.95996 7.08 8.11996 7.08 7.59996 7.6C7.07996 8.12 7.07996 8.96 7.59996 9.48L14.12 16L7.59996 22.52C7.07996 23.04 7.07996 23.88 7.59996 24.4C8.11996 24.92 8.95996 24.92 9.47996 24.4L16 17.88L22.52 24.4C23.04 24.92 23.88 24.92 24.4 24.4C24.92 23.88 24.92 23.04 24.4 22.52L17.88 16L24.4 9.48C24.9066 8.97333 24.9066 8.12 24.4 7.61333Z"
-                    fill="#171717"
+                    className="fill-black-900 dark:fill-white-100"
                   />
                 </svg>
               </button>
@@ -173,7 +171,7 @@ const Nav = () => {
             {/* menu  */}
             <ul className="flex flex-col items-center gap-4 font-medium my-6">
               <li>
-                <Link href="/" onClick={() => handleMenu(false)}>
+                <Link href="/courses" onClick={() => handleMenu(false)}>
                   Courses
                 </Link>
               </li>
