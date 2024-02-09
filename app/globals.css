@@ -10,4 +10,16 @@
   .btn_common {
     @apply text-base px-10 py-4 rounded-full font-semibold duration-200;
   }
+
+  .title {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold text-black-900 dark:text-white-100;
+  }
+
+  .subtitle {
+    @apply text-base text-black-500 dark:text-white-500;
+  }
+
+  .common_text {
+    @apply text-sm text-black-100 dark:text-white-900;
+  }
 }
