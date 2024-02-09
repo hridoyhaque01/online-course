@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       screens: {
         xs: "380px",
+        "3xl": "1940px",
       },
       colors: {
         transparant: "transparent",

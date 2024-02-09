@@ -53,7 +53,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-44 sm:w-64 md:w-72 aspect-square bg-secondary-500 dark:bg-dark-800 opacity-15 rounded-full absolute -bottom-8 -left-32 md:-bottom-20 z-10 duration-200"></div>
+      <div className="w-44 sm:w-64 md:w-72 aspect-square bg-secondary-500 dark:bg-dark-800 opacity-15 rounded-full absolute -bottom-8 -left-32 md:-bottom-20 z-10 duration-200 3xl:hidden"></div>
     </section>
   );
 };
