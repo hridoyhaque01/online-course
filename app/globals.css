@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-full max-w-[1170px] mx-auto;
+  }
+
+  .btn_common {
+    @apply text-base px-10 py-4 rounded-full font-semibold duration-200;
+  }
+}
