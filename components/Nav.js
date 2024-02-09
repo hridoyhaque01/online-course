@@ -1,5 +1,6 @@
 "use client";
 import logo from "@/public/logo.png";
+import { Button } from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,7 +50,7 @@ const Nav = () => {
     <nav
       className={`px-6  text-black-900 dark:text-white-100 sticky top-0  z-[999] ${
         isScroll ? "bg-gradient-100 dark:bg-gradient-900 py-3" : "py-5"
-      } ${showMenu ? "" : "backdrop-blur-md duration-200"}`}
+      } ${!isScroll ? "" : showMenu ? "" : "backdrop-blur-md duration-200"}`}
     >
       <div className="container flex items-center justify-between gap-4">
         {/* logo  */}
@@ -95,18 +96,18 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center gap-4 lg:gap-5">
-            <button
+            <Button
               type="button"
-              className="btn_common border border-primary-500 text-primary-500 py-3 lg:py-4 px-6 lg:px-10 text-sm lg:text-base whitespace-nowrap"
+              className="h-auto bg-transparent rounded-full border border-primary-500 text-primary-500 py-3 lg:py-4 px-6 lg:px-10 text-sm lg:text-base whitespace-nowrap hover:bg-primary-500 hover:text-white-100"
             >
               Sign In
-            </button>
-            <button
+            </Button>
+            <Button
               type="button"
-              className="btn_common bg-secondary-500 text-white-100 py-3 lg:py-4 px-6 lg:px-10 text-sm lg:text-base whitespace-nowrap"
+              className="h-auto rounded-full bg-secondary-500 text-white-100 py-3 lg:py-4 px-6 lg:px-10 text-sm lg:text-base whitespace-nowrap"
             >
               Sign Up
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -194,18 +195,18 @@ const Nav = () => {
 
             {/* auth  */}
             <div className="flex flex-col items-center gap-5">
-              <button
+              <Button
                 type="button"
-                className="w-full max-w-[200px] mx-auto btn_common border border-primary-500 text-primary-500"
+                className="h-auto bg-transparent rounded-full w-full max-w-[200px] mx-auto border border-primary-500 text-primary-500 py-4 px-6 lg:px-10 hover:bg-primary-500 hover:text-white-100"
               >
                 Sign In
-              </button>
-              <button
+              </Button>
+              <Button
                 type="button"
-                className="w-full max-w-[200px] mx-auto btn_common bg-secondary-500 text-white-100"
+                className="h-auto rounded-full w-full max-w-[200px] mx-auto bg-secondary-500 text-white-100 py-4 px-6 lg:px-10"
               >
                 Sign Up
-              </button>
+              </Button>
             </div>
           </div>
         </div>

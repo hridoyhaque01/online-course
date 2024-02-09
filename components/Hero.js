@@ -3,6 +3,7 @@ import book from "@/public/book.png";
 import bulb from "@/public/bulb.png";
 import hero from "@/public/hero.png";
 import solution from "@/public/solution.png";
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 
 const Hero = () => {
@@ -21,12 +22,12 @@ const Hero = () => {
             courses crafted to elevate your skills, advance your career, and
             broaden your horizons.
           </p>
-          <button
+          <Button
             type="button"
-            className="btn_common bg-primary-500 text-white-100 max-w-max mx-auto md:mx-0"
+            className="px-10 py-4 h-auto rounded-full bg-primary-500 text-white-100 max-w-max mx-auto md:mx-0 text-base"
           >
             Explore Now
-          </button>
+          </Button>
         </div>
         {/* image  */}
         <div className="w-full max-w-[420px] md:max-w-full mx-auto relative">

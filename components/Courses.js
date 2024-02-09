@@ -5,6 +5,7 @@ import course2 from "@/public/course2.png";
 import dot from "@/public/dot.svg";
 import hexa from "@/public/hexa.svg";
 import plus from "@/public/plus.svg";
+import { Button } from "@nextui-org/react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
@@ -246,12 +247,12 @@ export const Card = ({ item }) => {
             </div>
             {/* add to cart  */}
             <div className="flex justify-center">
-              <button
+              <Button
                 type="button"
-                className="btn_common border border-primary-500 text-base text-primary-500 font-semibold"
+                className="bg-transparent py-4 px-10 h-auto rounded-full border border-primary-500 text-base text-primary-500 hover:bg-primary-500 hover:text-white-100 font-semibold"
               >
                 Add To Cart
-              </button>
+              </Button>
             </div>
           </div>
         </div>
