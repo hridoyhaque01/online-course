@@ -22,4 +22,8 @@
   .common_text {
     @apply text-sm text-black-100 dark:text-white-900;
   }
+
+  .ellipse {
+    @apply w-full whitespace-nowrap overflow-hidden text-ellipsis;
+  }
 }

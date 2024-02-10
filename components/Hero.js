@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="px-6 py-24 md:py-16 relative overflow-hidden">
+    <section className="px-5 py-16 relative overflow-hidden">
       <div className="container grid md:grid-cols-2 gap-y-8 gap-x-2.5 items-center">
         {/* content  */}
         <div className="flex flex-col gap-6 w-full text-center md:text-left duration-200">

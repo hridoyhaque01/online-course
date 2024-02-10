@@ -1,4 +1,4 @@
-const {nextui} = require("@nextui-org/react");
+const { nextui } = require("@nextui-org/react");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         transparant: "transparent",
+        disable: "#737373",
         white: {
           100: "#fff",
           500: "#F5F5F5",
@@ -25,6 +26,7 @@ module.exports = {
           500: "#00D0C8",
         },
         secondary: {
+          600: "#D77308",
           500: "#F39A0F",
           200: "#FCE38B",
         },
@@ -39,12 +41,17 @@ module.exports = {
           900: "#111827",
           950: "#030712",
         },
+        neutral: {
+          800: "#262626",
+        },
       },
       backgroundImage: {
         "gradient-100":
           "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.80) 0.01%, rgba(255, 255, 255, 0.20) 100%)",
         "gradient-900":
           "linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 0.01%, rgba(0, 0, 0, 0.20) 100%)",
+        "gradient-green": "linear-gradient(180deg, #00D0C8 0%, #009D97 100%)",
+        "gradient-dark": "linear-gradient(180deg, #030712 0%, #030712 100%)",
         // "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         // "gradient-conic":
         //   "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -52,6 +59,7 @@ module.exports = {
 
       boxShadow: {
         grey: "0px 2px 40px 0px rgba(14, 14, 14, 0.10)",
+        accContainer: "0px 2px 10px 0px rgba(14, 14, 14, 0.08)",
       },
     },
   },
