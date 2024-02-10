@@ -46,7 +46,7 @@ const Contact = () => {
               <div className="w-full my-4 relative">
                 <input
                   type="email"
-                  className="px-3 py-4 border border-white-900 rounded-xl w-full placeholder:text-disable bg-transparent outline-none"
+                  className="px-3 py-4 border border-white-900 dark:border-black-500 rounded-xl w-full placeholder:text-disable bg-white-100 dark:bg-dark-900 outline-none"
                   placeholder="Email Enter Your Email"
                 />
                 <div className="absolute -right-10 -bottom-20 opacity-60 hidden sm:block">
